@@ -1,0 +1,190 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App Container */
+.App {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background: #f0f4f8;
+  min-height: 100vh;
+}
+
+/* Form Styles */
+.form {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #007bff;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Resume Styles */
+.resume {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.resume h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #007bff;
+}
+
+.resume p {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.resume h2 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #555;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* Credit Styles */
+.credit {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    margin: 10px;
+  }
+
+  .form, .resume {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .form h2,
+  .resume h1 {
+    font-size: 22px;
+  }
+
+  .form input,
+  .form textarea,
+  .form button {
+    font-size: 14px;
+  }
+
+  .resume h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form input,
+  .form textarea {
+    font-size: 12px;
+  }
+
+  .form button {
+    font-size: 14px;
+  }
+
+  .resume h1 {
+    font-size: 20px;
+  }
+
+  .resume h2 {
+    font-size: 16px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
